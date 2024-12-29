@@ -4,49 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Listings</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-        }
-        .main-content {
-            flex: 3; /* Takes up 3/4 of the container */
-            padding-right: 20px;
-        }
-        .sidebar {
-            flex: 1; /* Takes up 1/4 of the container */
-            border-left: 1px solid #ccc;
-            padding-left: 20px;
-        }
-        .job-listing {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        .job-listing h3 {
-            margin-top: 0;
-        }
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stack content vertically */
-            }
-            .sidebar {
-                border-left: none;
-                border-top: 1px solid #ccc;
-                padding: 10px 0;
-                margin-top: 20px;
-            }
-            .main-content, .sidebar{
-                flex: 1;
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
