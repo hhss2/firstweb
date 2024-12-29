@@ -2,38 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>this is my first website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+        }
+        .main-content {
+            flex: 3; /* Takes up 3/4 of the container */
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1; /* Takes up 1/4 of the container */
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+        .job-listing {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .job-listing h3 {
+            margin-top: 0;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack content vertically */
+            }
+            .sidebar {
+                border-left: none;
+                border-top: 1px solid #ccc;
+                padding: 10px 0;
+                margin-top: 20px;
+            }
+            .main-content, .sidebar{
+                flex: 1;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>this is first paragrpah</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-    <section>
-        <h2>this is second paragrpah</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>  
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <br>
-        <header> this is 2nd paragrpah</header>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, repellat.</p>
-     
+
+    <h1>Job Listings</h1>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Recent Listings</h2>
+
+            <div class="job-listing">
+                <h3>Software Engineer</h3>
+                <p>Company: Tech Solutions Inc.</p>
+                <p>Location: New York, NY</p>
+                <a href="#">Apply Now</a>
+            </div>
+
+            <div class="job-listing">
+                <h3>Marketing Manager</h3>
+                <p>Company: Global Marketing Group</p>
+                <p>Location: London, UK</p>
+                <a href="#">Apply Now</a>
+            </div>
+
+            <div class="job-listing">
+                <h3>Data Scientist</h3>
+                <p>Company: Data Insights Ltd.</p>
+                <p>Location: San Francisco, CA</p>
+                <a href="#">Apply Now</a>
+            </div>
+
+            </div>
+
+        <div class="sidebar">
+            <h2>Other Pages</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                </ul>
+
+            <h2>Subscribe</h2>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
